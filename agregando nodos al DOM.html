@@ -1,0 +1,35 @@
+<DOCTYPE! html>
+    <html lang="es">
+        <head>
+        <meta charset="utf-8">
+        <title>Document Object Model</title>
+        </head>
+            <body>
+                <ol id="lista">
+                    <li id="primero">lista </li>
+                    <li>lista </li>
+                </ol>
+       <script>
+           //AGREGARvar primerElemento = document.getElementById("primero");
+           //AGREGAR primerElemento.innerHTML = "Nuevo texto <i class=\"foo\"><i >PaginasAmarillas</i>";//Importante
+          var elemento = document.createElement("li"),
+         contenido = document.createTextNode("Nuevo Texto");
+        elemento.appendChild(contenido);
+           
+           var padre = document.getElementsByTagName("li")[0].parentNode,
+               referencia = document.getElementsByTagName("li")[0];
+           
+           padre.removeChild(referencia);
+          //REFRESCAR referencia = document.getElementsByTagName("li")[0];
+           //REFRESCAR padre.replaceChild(elemento, referencia);
+           
+           
+           //elemento.appendChild(contenido);
+           //var padre = document.getElementsByTagName("li")[0].parentNode,
+               //primerElemento = document.getElementsByTagName("li")[1];
+           //padre.insertBefore(elemento, primerElemento);
+           //var padre = document.getElementById("lista");
+          //padre.appendChild(elemento);
+       </script>
+            </body>
+        </html>

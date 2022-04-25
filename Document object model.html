@@ -1,0 +1,34 @@
+<DOCTYPE! html>
+    <html lang="es">
+        <head>
+        <meta charset="utf-8">
+        <title>Document Object Model</title>
+        </head>
+            <body>
+                
+                <h1 id="Titulo">Linkin Park</h1>
+                <div id="subtitulo"></div>
+                <p>1 - Linkin Park es una banda estadounidense de nu metal procedente de Agoura Hills, California. Se formó en 1996 e inicialmente estaba integrada por Mike Shinoda, Dave Farrell, Joe Hahn, Brad Delson, Rob Bourdon y Chester Bennington, este último como voz principal. La banda inició en ese mismo año sus primeros trabajos musicales de manera independiente, en la que grabaron su primer material llamado Xero; sin embargo no tuvieron éxito en la búsqueda de un sello discográfico ya que nadie mostraba interés por su trabajo, pero en Los Ángeles y con el respaldo de Jeff Blue, quien era vicepresidente de Warner Records, lograron firmar con el sello en 1999. El nombre del grupo es un juego de palabras que hace referencia al Lincoln Park en Santa Mónica.</p>
+                
+                <p id="segundo">2 - En octubre de 2000, el grupo lanzó su álbum debut, titulado Hybrid Theory, en el que se encuentran sencillos populares como «Crawling», «Papercut», «With You», «In the End» y «One Step Closer»; los últimos dos obtuvieron certificación de disco de oro en Australia.10​ Hybrid Theory que alcanzó el puesto número dos en el Billboard 200, fue el séptimo álbum más vendido de la década del 2000,11​ y fue certificado con disco de diamante en los Estados Unidos y múltiple disco de platino en Europa.12​13​14​ El cuarto sencillo del álbum, «In the End», alcanzó su mayor posición al situarse en el segundo puesto de la lista Billboard Hot 100.15​</p>
+                
+                <p>3. - En marzo de 2003, salió al mercado su segundo álbum de estudio, Meteora. Solo en las primeras semanas logró ventas de 810 000 unidades,16​ el álbum entró en el Billboard 200 en el puesto número uno, y se convirtió en el tercer disco más vendido del año.17​ De este disco surgieron canciones como «Somewhere I Belong» y «Numb»; esta última recibió un disco de oro en los Estados Unidos y Australia.18​19​ Ese mismo año, MTV2 nombró a Linkin Park como la sexta «mejor banda en la era del vídeo musical» y la tercera «mejor banda del nuevo milenio», detrás de Oasis y Coldplay.20​21​ Asimismo, Billboard ubicó al grupo en el puesto diecinueve de los mejores artistas de la década. En noviembre de ese mismo año, la banda lanzó su primer álbum en directo, titulado Live in Texas, que grabaron en el Reliant Stadium, en Houston, Texas.22​ El disco obtuvo múltiples certificaciones de oro en Alemania, Nueva Zelanda, Reino Unido y Austria.23​ Posteriormente, en 2008, lanzaron otro álbum en vivo, Road to Revolution: Live at Milton Keynes.24​</p>
+                
+                
+       <script>
+          var elementosP = document.getElementsByTagName("p");
+           var segundoParrafo = document.getElementById("segundo");
+           
+           //1. - crear elemento
+           var elemento = document.createElement("h2");
+           //2. - crear un nodo de texto
+           var contenido = document.createTextNode("Este es nuestro titular");
+           //3. - Añadir el nodo de texto al elemento
+           elemento.appendChild(contenido);
+           //4. - Agregar atributos al elemento
+           elemento.setAttribute("align","center");
+           //5. - Agregar el elemento al documento
+           document.getElementById("subtitulo").appendChild(elemento);
+       </script>
+            </body>
+        </html>
